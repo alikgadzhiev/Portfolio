@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевод вещественных чисел в двоичную систему счисления</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+        p.first {
+            color: #f8e041;
+            font-size: 300%;
+            font-family: "Arial Rounded MT Bold";
+            margin-top: 100px;
+        }
+
+        #para1 {
+            color: #f8e041;
+            margin-top: 175px;
+            margin-left: 5px;
+            font-size: 200%;
+            font-family: "Arial Rounded MT Bold";
+        }
+
+        #para2 {
+            color: #f8e041;
+            margin-top: 175px;
+            font-size: 200%;
+            margin-left: 130px;
+            font-family: "Arial Rounded MT Bold";
+        }
+
+        #myText {
+            margin-left: 5px;
+            width: 300px;
+        }
+
+        #countOfCommas {
+            margin-left: 50px;
+            width: 300px;
+        }
+
+        body {
+            background-image: url(smart.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #mainButton {
+            font-size: 150%;
+            color: white;
+            margin-left: 200px;
+        }
+
+        #para3 {
+            font-size: 150%;
+            margin-top: 200px;
+        }
+
+        #para4 {
+            font-size: 150%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <p align="center" class="first">
+        Перевод вещественного числа в двоичную систему счисления
+    </p>
+</header>
+<div class="row g-3 align-items-center">
+    <div class="col-auto">
+        <p class="col-form-label" id="para1">Исходное число</p>
+    </div>
+    <div class="col-auto">
+        <p class="col-form-label" id="para2">Количество знаков после запятой</p>
+    </div>
+</div>
+<div class="row g-3 align-items-center">
+    <div class="col-auto">
+        <input type="text" id="myText" class="form-control" aria-describedby="passwordHelpInline">
+    </div>
+    <div class="col-auto">
+        <input type="text" id="countOfCommas" class="form-control" aria-describedby="passwordHelpInline">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="myFunction()" id="mainButton">Рассчитать</button>
+</div>
+<script>
+    function myFunction() {
+        const val = document.getElementById("myText").value;
+        let count = document.getElementById("countOfCommas").value;
+        const words = val.split(',');
+        let left = words[0], right = words[1];
+        while (right > 1)
+            right /= 10;
+        let ans = "";
+        if (left === "0" && count === "0") {
+            alert("0");
+            return;
+        } else if (count === "0") {
+            alert(parseFloat(left).toString(2));
+            return;
+        }
+        while (true) {
+            if (count < 1)
+                break;
+            right *= 2;
+            if (right >= 1) {
+                ans += '1';
+                right -= 1.00000000000;
+            } else {
+                ans += '0';
+            }
+            count--;
+        }
+        alert(parseFloat(left).toString(2) + ',' + ans);
+    }
+</script>
+<div>
+    <form action="main.html">
+        <button class="btn btn-primary" id="para3">Главная</button>
+    </form>
+</div>
+<div>
+    <form action="myAccomplishments.html">
+        <button class="btn btn-primary" id="para4">Мои достижения</button>
+    </form>
+</div>
+</body>
+</html>
