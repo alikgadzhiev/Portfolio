@@ -24,105 +24,7 @@
             font-size: 150%;
         }
         #para{
-            margin-left: 500px;
-        }
-        #para1{
-            margin-left: 30px;
-        }
-        #para2{
-            margin-left: 30px;
-        }
-    </style>
-</head>
-<body>
-<header>
-    <p align="center" id="first">
-        Проект "Физический калькулятор"
-    </p>
-</header>
-<div>
-    <form action="myAccomplishments.html">
-        <button class="btn btn-primary" id="turn">Мои достижения</button>
-    </form>
-</div>
-<p>
-    <img src="certificate2019.jpg" height="700" width="400" id="para">
-    <img src="main2019.jpg" height="700" width="400" id="para1">
-    <img src="project2019.jpg" height="500" width="400" id="para2">
-</p>
-</body>
-</html>
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Проект 2019 года</title>-->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
-<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
-<!--    <style>-->
-<!--        body{-->
-<!--            background-image: url(good.jpg);-->
-<!--            background-repeat: no-repeat;-->
-<!--            background-attachment: fixed;-->
-<!--            background-size: cover;-->
-<!--        }-->
-<!--        #para4{-->
-<!--            font-size: 150%;-->
-<!--            margin-top: 20px;-->
-<!--        }-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-<!--<p>-->
-<!--    <img src="certificate2019.jpg" height="700" width="400" id="para">-->
-<!--    <img src="main2019.jpg" height="700" width="400" id="para1">-->
-<!--    <img src="project2019.jpg" height="500" width="400" id="para2">-->
-<!--</p>-->
-<!--<div>-->
-<!--    <form action="myAccomplishments2019.html">-->
-<!--        <button class="btn btn-primary" id="para4">Достижения 2019 года</button>-->
-<!--    </form>-->
-<!--</div>-->
-<!--</body>-->
-<!--</html>-->
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Мои достижения 2019 года</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        #first {
-            color: #f8e041;
-            font-size: 300%;
-            font-family: "Arial Rounded MT Bold";
-            margin-top: 50px;
-        }
-        body{
-            background-image: url(good.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        #turn{
-            font-size: 150%;
-        }
-        #para{
-            margin-left: 50px;
+            margin-left: 300px;
         }
         #para1{
             margin-left: 50px;
@@ -130,23 +32,10 @@
         #para2{
             margin-left: 30px;
         }
-        #para3{
-            font-size: 150%;
-            margin-left:100px;
-        }
-
         #calculator{
-            margin-left:400px;
+            margin-left:785px;
             margin-top:100px;
         }
-        .title{
-            margin-bottom: 10px;
-            text-align:center;
-            width: 210px;
-            color:green;
-            border: solid black 2px;
-        }
-
         input[type="button"]
         {
             background-color:green;
@@ -186,49 +75,50 @@
     </script>
 </head>
 <body>
-<header>
-    <p align="center" id="first">
-        Проект "Физический калькулятор"
+    <header>
+        <p align="center" id="first">
+            Проект "Физический калькулятор"
+        </p>
+    </header>
+    <div>
+        <form action="myAccomplishments.html">
+            <button class="btn btn-primary" id="turn">Мои достижения</button>
+        </form>
+    </div>
+    <p>
+        <img src="certificate2019.jpg" height="700" width="400" id="para">
+        <img src="main2019.jpg" height="700" width="400" id="para1">
+        <img src="project2019.jpg" height="500" width="400" id="para2">
     </p>
-</header>
-<div>
-    <form action="myAccomplishments.html">
-        <button class="btn btn-primary" id="turn">Мои достижения</button>
-    </form>
-</div>
-<p>
-    <!--    <img src="certificate2019.jpg" height="700" width="400" id="para">-->
-    <!--    <img src="main2019.jpg" height="700" width="400" id="para1">-->
-<table border="1" id = "calculator">
-    <tr>
-        <td colspan="3"><input type="text" id="result"/></td>
-        <td><input type="button" value="c" onclick="clr()"/> </td>
-    </tr>
-    <tr>
-        <td><input type="button" value="1" onclick="dis('1')"/> </td>
-        <td><input type="button" value="2" onclick="dis('2')"/> </td>
-        <td><input type="button" value="3" onclick="dis('3')"/> </td>
-        <td><input type="button" value="/" onclick="dis('/')"/> </td>
-    </tr>
-    <tr>
-        <td><input type="button" value="4" onclick="dis('4')"/> </td>
-        <td><input type="button" value="5" onclick="dis('5')"/> </td>
-        <td><input type="button" value="6" onclick="dis('6')"/> </td>
-        <td><input type="button" value="-" onclick="dis('-')"/> </td>
-    </tr>
-    <tr>
-        <td><input type="button" value="7" onclick="dis('7')"/> </td>
-        <td><input type="button" value="8" onclick="dis('8')"/> </td>
-        <td><input type="button" value="9" onclick="dis('9')"/> </td>
-        <td><input type="button" value="+" onclick="dis('+')"/> </td>
-    </tr>
-    <tr>
-        <td><input type="button" value="." onclick="dis('.')"/> </td>
-        <td><input type="button" value="0" onclick="dis('0')"/> </td>
-        <td><input type="button" value="=" onclick="solve()"/> </td>
-        <td><input type="button" value="*" onclick="dis('*')"/> </td>
-    </tr>
-</table>
-</p>
+    <table border="1" id = "calculator">
+        <tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+            <td><input type="button" value="c" onclick="clr()"/> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+        </tr>
+    </table>
 </body>
 </html>
